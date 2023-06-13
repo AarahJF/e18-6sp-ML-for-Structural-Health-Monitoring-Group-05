@@ -10,7 +10,7 @@ from dash.dependencies import Input, Output, State
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
  # Load dataset
-df = pd.read_csv('ArrahML_project\ForMahasen-Table1.csv')
+df = pd.read_csv('ForMahasen-Table1.csv')
 # Check for missing values
 # Drop duplicate rows
 df=df.drop_duplicates(keep='first')
@@ -69,7 +69,7 @@ app.layout = html.Div(
 
 
 
-# Define the callback function to predict wine quality
+# Define the callback function to predict
 @app.callback(
     Output(component_id='prediction-output', component_property='children'),
     [Input('predict-button', 'n_clicks')],
