@@ -69,6 +69,18 @@ The aim of our project is to leverage the power of machine learning techniques t
 By addressing the limitations of existing regression models and developing an ML-based predictive model trained on a dataset of CFD simulations, we aim to provide a more accurate and efficient solution for predicting the drag force coefficient of single-column billboard structures.
 .....
 
+## DataSet
+The Dataset consists of input parameters and corresponding drag force coefficients for single-column billboards. The input parameters include aspect ratio, clearance ratio, angle (in theta), and the output is the drag coefficient.
+
+Breakdown of the dataset:
+<ul>
+<li>Aspect ratio: The aspect ratio describes the proportional relationship between the width and height of the billboard.</li>
+<li>Clearance ratio: The clearance ratio represents the ratio of the distance between the bottom of the billboard and the ground to the height of the billboard.</li>
+<li>Angle (in theta): The angle refers to the inclination or tilt of the billboard from the vertical position.</li>
+<li>Drag coefficient: The drag coefficient quantifies the resistance experienced by the billboard due to wind forces.</li></ul>
+
+The dataset contains various combinations of these parameters, providing a range of scenarios for training and evaluating the predictive model. The dataset includes different aspect ratios, clearance ratios, angles, and corresponding drag coefficients.
+![alt](https://github.com/cepdnaclk/e18-6sp-ML-for-Structural-Health-Monitoring-Group-05/blob/main/docs/images/Dataset.PNG)
 ## Links
 
 - [Project Repository](https://github.com/cepdnaclk/{{ page.repository-name }}){:target="_blank"}
