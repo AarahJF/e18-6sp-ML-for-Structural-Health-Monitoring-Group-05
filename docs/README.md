@@ -48,10 +48,10 @@ The aim of our project is to leverage the power of machine learning techniques t
 <ul>
 <li>Prevent accidents or damage to property and life: By accurately predicting the drag force coefficient for single-column billboard structures, we aim to enhance their structural integrity and safety. Accurate predictions enable us to design billboards that can withstand wind loads, reducing the risk of accidents or structural failures that could cause damage to property and, most importantly, threaten human lives. Our goal is to contribute to a safer built environment by providing reliable and precise information for the design and maintenance of billboard structures.</li>
 
-<li>Ensure optimized usage of material and resources: By understanding the drag force coefficient and its influence on billboard structures, we can optimize the design and usage of materials and resources. This optimization leads to more efficient and cost-effective designs, minimizing material wastage and maximizing the utilization of resources. By employing accurate predictions, we can strike a balance between structural safety and economic efficiency, creating sustainable billboard structures that meet safety standards while reducing unnecessary resource consumption.</li>
- </ul>
+<li>Ensure optimized usage of material and resources: By understanding the drag force coefficient and its influence on billboard structures, we can optimize the design and usage of materials and resources. This optimization leads to more efficient and cost-effective designs, minimizing material wastage and maximizing the utilization of resources. By employing accurate predictions, we can strike a balance between structural safety and economic efficiency, creating sustainable billboard structures that meet safety standards while reducing unnecessary resource consumption.</li></ul>
  
- ## Solution
+
+## Solution
  
  The proposed solution involves addressing the limitations of existing regression models and developing a machine learning-based predictive model for accurately predicting the drag force coefficient of single-column billboard structures. Here is an outline of the solution:
 <ul>
