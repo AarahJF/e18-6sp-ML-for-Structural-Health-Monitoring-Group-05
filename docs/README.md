@@ -25,7 +25,6 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Links](#links)
 
 ---
 ## Introduction
@@ -67,7 +66,6 @@ The aim of our project is to leverage the power of machine learning techniques t
 <li>Validate the model against existing regression models: To assess the accuracy and efficiency of the ML-based predictive model, it is validated against the existing regression models. This validation involves comparing the model's predictions with the results obtained from the regression models. The performance of the ML model is evaluated based on metrics such as accuracy, precision, and efficiency.</li></ul>
 
 By addressing the limitations of existing regression models and developing an ML-based predictive model trained on a dataset of CFD simulations, we aim to provide a more accurate and efficient solution for predicting the drag force coefficient of single-column billboard structures.
-.....
 
 ## DataSet
 The Dataset consists of input parameters and corresponding drag force coefficients for single-column billboards. The input parameters include aspect ratio, clearance ratio, angle (in theta), and the output is the drag coefficient.
