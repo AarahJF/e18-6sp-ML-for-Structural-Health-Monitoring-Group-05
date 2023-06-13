@@ -34,6 +34,8 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 The aim of our project is to leverage the power of machine learning techniques to create a model that can predict the drag force coefficient for single-column-supported billboards. By analyzing the forces acting on the structure, we can provide insights into its structural safety and help optimize its design for efficiency and cost-effectiveness.
 
+![alt text](https://static01.nyt.com/images/2023/03/04/multimedia/03desertx-nichols1-kqvb/03desertx-nichols1-kqvb-superJumbo.jpg)
+
 ## Importance of Analysis
 
  Analyzing billboards ensures their safety and compliance, optimizing their design and mitigating risks. Our project leverages modern analysis techniques and machine learning to revolutionize billboard engineering. By evaluating structural integrity, assessing wind load resistance, and complying with regulations, we create efficient and economical designs. Our innovative approach addresses outdated practices, enhancing accuracy and reliability. Join us in building a safer, more effective advertising infrastructure with enhanced structural integrity and reduced failure rates.
@@ -41,6 +43,7 @@ The aim of our project is to leverage the power of machine learning techniques t
 ## Why drag force coefficient?
 
  The drag force coefficient is a critical factor that directly impacts the health and stability of single-column billboard structures. Accurately predicting this coefficient is essential for ensuring the safety and durability of these structures. By understanding the drag force coefficient, engineers can assess the level of resistance the structure will encounter when exposed to wind loads. This information allows for the optimization of design parameters, such as dimensions and materials, to ensure that the structure can withstand the forces acting upon it. By accurately predicting the drag force coefficient, we can make informed decisions and implement measures to enhance the structural integrity and overall health of single-column billboard structures, minimizing the risk of damage or collapse.
+ ![alt](https://allaccidents.gr/images/pinakida.jpg)
  
 ## Motivation
 
