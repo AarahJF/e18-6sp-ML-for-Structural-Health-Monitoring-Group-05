@@ -79,7 +79,7 @@ Breakdown of the dataset:
 
 The dataset contains various combinations of these parameters, providing a range of scenarios for training and evaluating the predictive model. The dataset includes different aspect ratios, clearance ratios, angles, and corresponding drag coefficients.
 
-![alt_new](https://github.com/cepdnaclk/e18-6sp-ML-for-Structural-Health-Monitoring-Group-05/blob/main/docs/images/Dataset.PNG)
+![Sample Image](./images/Dataset.PNG)
 
 ## Links
 
