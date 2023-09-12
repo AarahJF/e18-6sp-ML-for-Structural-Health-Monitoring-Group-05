@@ -80,7 +80,7 @@ db_config = {
     "user": 'root',
     "password": "",
     "database": "6SP",
-    'port': 3307, 
+    'port': 3306, 
 }
 
 
