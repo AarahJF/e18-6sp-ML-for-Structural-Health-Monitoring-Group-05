@@ -16,8 +16,8 @@ db_config = {
     "host": 'localhost',
     "user": 'root',
     "password": "",
-    "database": "6SP",
-    'port': 3307, 
+    "database": "6sp",
+    'port': 3306, 
 }
 
 # Connect to the database
@@ -102,6 +102,7 @@ def predict():
     calculated_coefficient = round(calculated_value(final_features),2)
 
     output = round(prediction[0], 2)
+    percentage_difference = abs((output - calculated_coefficient) / calculated_coefficient) * 100
 
     conn = mysql.connector.connect(**db_config)
     cursor = conn.cursor()
@@ -117,8 +118,11 @@ def predict():
     finally:
         cursor.close()
         conn.close()
+    
+     
 
-    return render_template('index.html', prediction_text='Drag Coefficient of billboard is :{} \n Calculated Drag Coefficient is: {}'.format(output,calculated_coefficient))
+    return render_template('index.html', prediction_text='{}'.format(output), calculated_text='{}'.format(calculated_coefficient),difference_text='{:.2f}%'.format(percentage_difference))
+
 
 if __name__ == "__main__":
     app.run(debug=True)

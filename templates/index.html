@@ -13,27 +13,91 @@
 </head>
 
 <body>
-  <div class="login">
-    <h1>Predict the Drag Coefficient of Billboards</h1>
-    <h3> Enter the following values to predict the Drag Coefficient of billboard</h3>
+  <div class="container2" >
+  <!-- <div class="container">
+    <div class="login" style="width: 700px !important;">
+      <h1>Predict Drag force Coefficient of Single column supoorted Billboards </h1>
+      <div style="text-align: left !important;">
+      <p>
+        The aim of this predictor is to predict the drag force coefficient for single-column-supported billboards. 
+        By analyzing the forces acting on the structure, we can provide insights into its structural safety and help optimize its design for efficiency and cost-effectiveness.
+      </p>
+      <p>This prediction is driven by the dual goals of enhancing billboard safety through accurate drag force predictions and optimizing resource usage for cost-effective, sustainable designs.</p>
+    </div>
+      <div style="display: flex; align-items: center;">
+        <img src="https://th.bing.com/th/id/OIP.BDzkXqFHjoQAMepxvkBobAAAAA?pid=ImgDet&rs=1" alt="Billboard Image" style="max-width: 200px; margin-right: 20px;">
+        <div style="text-align: left !important;font-size: 14px;">
+          <p>
+            <div style="font-weight: bold; font-size: 16px;">Input Parameters</div>
+            <ul>
+              <li>Aspect ratio (b/d): The aspect ratio describes the proportional relationship between the width and height of the billboard.</li>
+              <li>Clearance ratio (d/h): The clearance ratio represents the ratio of the distance between the bottom of the billboard and the ground to the height of the billboard.</li>
+              <li>Wind Attack Angle (in theta): The angle refers to the inclination or tilt of the billboard from the vertical position.</li>
+            </ul>
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="container">
+    <!-- first login class div -->
+    <div style="justify-content: left;">
+    <div class="login">
+      <!-- <h1>Predict the Drag Coefficient of Billboards</h1> -->
+      <h1>Predict Drag force Coefficient of Single column supoorted Billboards </h1>
+      <h3> Enter the following Input values to predict</h3>
+      <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}" method="post">
+        <input type="text" name="aspectRatio" placeholder="Aspect ratio" required="required" />
+        <input type="text" name="clrRatio" placeholder="Clearance ratio" required="required" />
+        <input type="text" name="angle" placeholder="ø (angle in theta)" required="required" />
+        <button type="submit" class="btn">Predict</button>
+      </form>
+    </div>
 
-    <!-- Main Input For Receiving Query to our ML -->
-    
-    <form action="{{ url_for('predict')}}" method="post">
-      <input type="text" name="aspectRatio" placeholder="Aspect ratio" required="required" />
-      <input type="text" name="clrRatio" placeholder="Clearance ratio" required="required" />
-      <input type="text" name="angle" placeholder="ø (angle in theta)" required="required" />
-
-      <button type="submit" class="btn">Predict</button>
-    </form>
-
-    <br>
-    <br>
-    {{ prediction_text }}
-
+    <div class="predicted-values" style="margin-left: 20px;" >
+      <div class="predicted-value2">
+       <div style="font-size: 20px; font-weight: bolder;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><p>Predicted Value : {{prediction_text}}</p></div>
+      </div>
+      <div class="predicted-value2" >
+        <div style="font-size: 20px; font-weight: bolder;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><p>Calculated Value : {{calculated_text}}</p></div>
+      </div>
+    </div>
+    <div class="predicted-value" style="width: 580px;margin-left: 20px;">
+      <div style="font-size: 20px; font-weight: 600 ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><p>Variance : {{difference_text}}</p></div>
+    </div>
   </div>
 
-
+  <!-- second login class  -->
+    <div class="login2" style="margin-bottom: 50px;justify-content: center !important; width:1300px !important">
+      <div style="text-align: left !important;">
+      <p>
+        The aim of this predictor is to predict the drag force coefficient for single-column-supported billboards. 
+        By analyzing the forces acting on the structure, we can provide insights into its structural safety and help optimize its design for efficiency and cost-effectiveness.
+      </p>
+      <p>This prediction is driven by the dual goals of enhancing billboard safety through accurate drag force predictions and optimizing resource usage for cost-effective, sustainable designs.</p>
+    </div>
+      <div style="display: flex; align-items: center;">
+        <img src="https://th.bing.com/th/id/OIP.BDzkXqFHjoQAMepxvkBobAAAAA?pid=ImgDet&rs=1" alt="Billboard Image" style="max-width: 200px; margin-right: 20px;">
+        <div style="text-align: left !important;font-size: 14px;">
+          <p>
+            <div style="font-weight: bold; font-size: 16px;">Input Parameters</div>
+            <ul>
+              <li>Aspect ratio (b/d): The aspect ratio describes the proportional relationship between the width and height of the billboard.</li>
+              <li>Clearance ratio (d/h): The clearance ratio represents the ratio of the distance between the bottom of the billboard and the ground to the height of the billboard.</li>
+              <li>Wind Attack Angle (in theta): The angle refers to the inclination or tilt of the billboard from the vertical position.</li>
+            </ul>
+          </p> 
+          <p>
+            The drag force coefficient is a critical factor for the safety and stability of single-column billboard structures. Accurate prediction of this coefficient is vital for ensuring their durability. Engineers use this information to assess how the structure will withstand wind loads and optimize design parameters like dimensions and materials. By predicting the drag force coefficient accurately, we can enhance structural integrity and reduce the risk of damage or collapse, ensuring the health of these billboards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
+
 
 </html>
